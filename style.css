@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  padding: 2.5rem;
+  height: 100vh;
+  display: flex;
+  line-height: 1.6;
+}
+.sidebar {
+  /* flex-grow: 0.25; */
+  background-color: #2d3439;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 3rem 4rem 4rem 4rem;
+  width: 52rem;
+  /* overflow-y: auto; */
+}
+.logo {
+  align-self: center;
+  height: 5.2rem;
+  margin-bottom: 4rem;
+}
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.6rem; */
+  overflow-y: auto;
+}
+.form-input {
+  display: grid;
+  grid-template-columns: 0fr 1fr 0fr 1fr;
+  grid-template-rows: auto;
+  height: 9.25rem;
+  background-color: #42484d;
+  padding: 1.5rem 2.75rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 0.5rem 2.5rem;
+  border-radius: 7px;
+  transition: all 0.5s, transform 1ms;
+}
+/* form.opacity {
+  transform: translateX(-20rem);
+}
+.opacity {
+  opacity: 0;
+} */
+.form-input.hidden {
+  transform: translateY(-30rem);
+  height: 0;
+  padding: 0 2.25rem;
+  margin-bottom: 0;
+  opacity: 0;
+}
+.hidden1 {
+  display: none;
+}
+.box {
+  max-width: 8.5rem;
+  padding: 0.3rem 1.1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(214, 222, 224);
+  transition: all 0.2s;
+}
+.box:focus {
+  outline: none;
+  background-color: #fff;
+}
+.type,
+.distance,
+.duration,
+.cadence,
+.elev-gain {
+  color: #ececec;
+}
+
+.form-running,
+.form-cycling {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 9.25rem;
+  background-color: #42484d;
+  padding: 1.5rem 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+  gap: 0.5rem 0;
+  border-radius: 7px;
+  color: #ececec;
+  border-left: 5px solid #00c46a;
+}
+.form-cycling {
+  border-left: 5px solid #ffb545 !important;
+}
+.label-workout {
+  grid-column: 1/4;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.numbers {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.icons {
+  font-size: 1.8rem;
+  /* margin-right: 0.2rem; */
+  height: 0.28rem;
+}
+.units {
+  font-size: 1.1rem;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.justify-end {
+  justify-self: end;
+}
+.justify-center {
+  justify-self: center;
+}
+#map {
+  flex-grow: 1;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #2d3439;
+  color: #ececec;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.5rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: #2d3439;
+}
+
+.running-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid #00c46a;
+}
+.cycling-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid #ffb545;
+}
+
+.btn-close {
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  background-color: #768d87;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  /* padding: 11px 23px; */
+  width: 7rem;
+  height: 3.4rem;
+  justify-self: end;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+}
+.btn-close:hover {
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+.btn-close:active {
+  /* position: relative; */
+  /* top: 1px; */
+  transform: translateY(1px);
+}
+.btn-remove-all {
+  position: absolute;
+  width: 10rem;
+  top: 12rem;
+  left: 7rem;
+}
+.btn-remove-all:active {
+  transform: translateY(1px);
+}
+.btn-sort {
+  position: absolute;
+  top: 14rem;
+  left: 45rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #aaa;
+  /* color: #ccc; */
+}
+.btn-sort:hover {
+  outline: none;
+  color: #ccc;
+  /* color: #22ac72; */
+}

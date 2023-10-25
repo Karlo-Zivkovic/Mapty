@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Mapty</title>
+  </head>
+  <body>
+    <section class="sidebar">
+      <img src="logo.png" alt="logo" class="logo" />
+      <div class="sidebar-container">
+        <form class="form-input hidden">
+          <label class="type">Type</label>
+          <select class="box box-type">
+            <option value="running">Running</option>
+            <option value="cycling">Cycling</option>
+          </select>
+          <label class="distance">Distance</label>
+          <input class="box box-distance" type="number" placeholder="km" />
+          <label class="duration">Duration</label>
+          <input class="box box-duration" type="number" placeholder="min" />
+          <label class="cadence">Cadence</label>
+          <input class="box box-cadence" type="number" placeholder="step/min" />
+          <label class="elev-gain hidden1">ElevGain</label>
+          <input class="box box-elev-gain hidden1" type="number" placeholder="meters" />
+          <button class="hidden1">ok</button>
+        </form>
+        <!-- <div class="form-running">
+          <p class="label-workout">Running on DATE</p>
+          <p>
+            <span class="icons">🏃‍♂️ </span><span class="numbers">2.5 </span
+            ><span class="units">KM</span>
+          </p>
+          <p>
+            <span class="icons">⏱ </span><span class="numbers">2.5 </span
+            ><span class="units">MIN</span>
+          </p>
+          <p>
+            <span class="icons">⚡️ </span><span class="numbers">2.5 </span
+            ><span class="units">MIN/KM</span>
+          </p>
+          <p class="justify-end">
+            <span class="icons">🦶🏼 </span><span class="numbers">2.5 </span
+            ><span class="units">SPM</span>
+          </p>
+        </div>
+        <div class="form-cycling">
+          <p class="label-workout">Cycling on DATE</p>
+          <p>
+            <span class="icons">🚴‍♀️ </span><span class="numbers">2.5 </span
+            ><span class="units">KM</span>
+          </p>
+          <p>
+            <span class="icons">⏱ </span><span class="numbers">2.5 </span
+            ><span class="units">MIN</span>
+          </p>
+          <p>
+            <span class="icons">⚡️ </span><span class="numbers">2.5 </span
+            ><span class="units">KM/H</span>
+          </p>
+          <p class="justify-center">
+            <span class="icons">⛰ </span><span class="numbers">2.5 </span
+            ><span class="units">M</span>
+          </p> -->
+        </div>
+      </div>
+    </section>
+    <button class="btn-close btn-remove-all">Remove All</button>
+    <button class="btn-sort">↓ SORT</button>
+    <div id="map"></div>
+  </body>
+</html>
