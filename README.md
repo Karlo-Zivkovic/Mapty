@@ -3,7 +3,7 @@ My only project done with object oriented programming. This was my venture that 
 
 <br />
 
-<h2>Languages and Utilities Used</h2>
+<h2>Libraries and Utilities Used</h2>
 
 - <b>Javascript</b>
 - <b>Leaflet</b>
