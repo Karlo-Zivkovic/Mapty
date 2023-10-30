@@ -1,5 +1,5 @@
 <h1>Description</h1>
-My only project done with object oriented programming. This was my venture that ended preaty fast when i started with react.
+Object oriented project
 
 <br />
 
@@ -11,3 +11,7 @@ My only project done with object oriented programming. This was my venture that 
 <h2>HOW TO START:</h2>
 
 - <b>Live server extension (Open with live server)</b>
+
+<h2>Project screenshot</h2>
+
+<img src="https://i.imgur.com/AkYB5fN.png" height="80%" width="80%" alt="project screenshot"/>
